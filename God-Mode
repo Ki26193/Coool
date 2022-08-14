@@ -1,4 +1,5 @@
--- Part 3        
+-- Part 3
+-- Skidded ngl
 A_1 = game.Players.LocalPlayer
 for i,v in pairs(A_1.Character:GetChildren()) do
   if v:IsA("BasePart") then

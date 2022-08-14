@@ -1,0 +1,22 @@
+-- Part 3        
+A_1 = game.Players.LocalPlayer
+for i,v in pairs(A_1.Character:GetChildren()) do
+  if v:IsA("BasePart") then
+    v:Destroy()
+  end
+end
+wait()
+local A_2 = A_1.CharacterAdded:wait()
+local A_3 = Instance.new('Folder')
+A_3.Name = "FULLY_LOADED_CHAR"
+A_3.Parent = A_2
+A_2:WaitForChild("RagdollConstraints"):Destroy()
+local A_4 = Instance.new("BoolValue", A_2)
+A_4.Name = "RagdollConstraints"
+local X = game.Players.LocalPlayer.Name
+local Y = game.Workspace:WaitForChild(X)
+local Z = Instance.new("Folder", game.Players.LocalPlayer.Character)
+Z.Name = "FULLY_LOADED_CHAR"
+Y.Parent = game.Workspace.Players
+game.Players.LocalPlayer.Character:WaitForChild("BodyEffects")
+game.Players.LocalPlayer.Character.BodyEffects.BreakingParts:Destroy()

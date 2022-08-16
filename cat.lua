@@ -6,6 +6,7 @@ game.RunService:BindToRenderStep(
         game.ReplicatedStorage.MainEvent:FireServer("Stomp")
         for a, b in next, game.Players:GetChildren() do
             if b.Character and b.Character.BodyEffects:FindFirstChild("K.O").Value == true then
+                Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                     CFrame.new(
                     b.Character.UpperTorso.Position.X,

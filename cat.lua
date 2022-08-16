@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ki26193/Coool/main/God-Mode"))()
 game.RunService:BindToRenderStep(
-    "STOMP_ALL",
+    "cat",
     0,
     function()
         local Animate = game.Players.LocalPlayer.Character.Animate
